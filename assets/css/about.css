@@ -1,0 +1,168 @@
+@import "./base.css";
+body {
+  font-family: "Be Vietnam Pro", sans-serif !important;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.about {
+  justify-content: center;
+  display: flex;
+  align-items: start;
+  margin-top: 93px;
+}
+
+.sidebar {
+  width: 30%;
+  background-image: url("../images/diamond.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 367px;
+  width: 525px;
+  position: relative;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  left: 40%;
+  top: 6%;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: var(--c50-ds);
+  font-size: 18px;
+}
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a img {
+  margin-right: 10px;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  color: var(--pri-ds);
+}
+
+.content {
+  width: 70%;
+  z-index: 100;
+  padding: 20px;
+  margin-left: -140px;
+  margin-top: -0.6%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.content-section {
+  display: none;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 45%;
+  width: 300px;
+  height: 200px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.text-content {
+  max-width: 55%;
+  font-size: 14px;
+  line-height: 17.71px;
+  color: var(--text-ds);
+  font-weight: 300;
+}
+
+.text-content p {
+  margin: 0;
+}
+
+.text-content strong {
+  color: var(--pri-ds);
+  font-weight: 500;
+}
+
+.read-more {
+  display: block;
+  margin-top: 60px;
+  text-decoration: none;
+  color: var(--pri-ds);
+  font-weight: bold;
+}
+
+@media (max-width: 770px) {
+  .about {
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 5px;
+  }
+
+  .sidebar {
+    width: 246px;
+    height: 171px;
+    background-size: contain;
+  }
+
+  .sidebar ul {
+    left: 30%;
+    top: 7%;
+  }
+  .sidebar ul li a {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.18px;
+    text-transform: uppercase;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -9.6%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content-section {
+    flex-direction: column;
+  }
+
+  .image {
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .text-content {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .text-content p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 15.18px;
+    color: var(--text-ds);
+  }
+
+  .read-more {
+    display: none;
+  }
+}
