@@ -1,13 +1,13 @@
 @import "./navbar.css";
 @import "./footer.css";
-@import "./operational-area.css";
+@import "./about.css";
 @import "./ambulance.css";
 @import "./client.css";
 @import "./main-product.css";
 @import "./blog.css";
 @import "./carousel.css";
 @import "./out-center.css";
-@import "./about.css";
+@import "./our-project.css";
 .app-container {
   width: 100%;
   overflow-x: hidden;
@@ -24,7 +24,6 @@
 .float-buttons {
   position: fixed;
   top: 65%;
-  /* bottom: 0; */
   right: 0;
   width: 70px;
   transform: translateY(-50%);

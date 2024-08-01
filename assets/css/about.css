@@ -89,7 +89,6 @@ body {
 }
 
 .tab-pane .heading {
-  /* margin-top: 10px; */
   margin-bottom: 20px;
 }
 
@@ -151,6 +150,9 @@ body {
   border-right: none;
   border-bottom-color: var(--pri-ds) !important;
 }
+.nav-item:focus-visible {
+  border: none;
+}
 
 .nav-tabs .nav-link {
   color: #FFFFFF;
@@ -167,24 +169,6 @@ body {
     flex-direction: column;
     max-width: 100%;
     margin-top: 5px;
-  }
-
-  .sidebar {
-    width: 246px;
-    height: 171px;
-    background-size: contain;
-  }
-
-  .sidebar ul {
-    left: 30%;
-    top: 7%;
-  }
-
-  .sidebar ul li a {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 15.18px;
-    text-transform: uppercase;
   }
 
   .content {
@@ -220,7 +204,4 @@ body {
     color: var(--text-ds);
   }
 
-  .read-more {
-    display: none;
-  }
 }
