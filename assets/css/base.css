@@ -6,11 +6,11 @@
   --c100-dac: #fff;
   --c900-dac: #25471f;
   --pri-ds: #e74822;
-  --sce-ds: #00254E;
+  --sce-ds: #00254e;
   --text-ds: #66717a;
   --c100-ds: #e3eefb;
   --c50-ds: #f2f8fd;
-  --c50-ds: #F2F8FD;
+  --c50-ds: #f2f8fd;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -49,6 +49,12 @@
 .be-vietnam-pro-normal {
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+.be-vietnam-pro-light {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-size: 14px;
 }
