@@ -8,6 +8,8 @@
 @import "./carousel.css";
 @import "./out-center.css";
 @import "./our-project.css";
+@import "./operational-area.css";
+@import "./product.css";
 .app-container {
   width: 100%;
   overflow-x: hidden;

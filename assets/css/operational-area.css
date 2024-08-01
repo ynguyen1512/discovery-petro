@@ -1,3 +1,11 @@
+#operational-area {
+  padding: 70px;
+}
+
+.header-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
 .header-text .text-cover {
   padding: 30px;
   display: flex;
@@ -32,101 +40,102 @@
   max-width: 50%;
 }
 
-.icon-text {
-  transition: background-color 0.3s, color 0.3s;
-  padding: 60px 10px;
-  border-radius: 15px;
-  cursor: pointer;
+.swiper-container {
   width: 100%;
-  max-width: 303px;
-  height: 100%;
-  margin: 0px 15px;
+}
+
+.swiper-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 25px 25px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  gap: 40px;
+  background-color: var(--c50-ds);
+  clip-path: polygon(50% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 0);
+}
+
+.swiper-slide img {
+  width: 25px;
+  height: 25px;
+}
+
+.swiper-slide:hover {
+  background-color: var(--sce-ds);
+  color: var(--c50-ds);
+  box-shadow: 0px 2px 10px 0px #38383840;
+}
+
+.swiper-slide:hover p {
+  color: var(--white-color) !important;
+}
+
+.swiper-slide:hover .icon-border {
+  background: var(--c50-ds);
+}
+
+.swiper-container-mobile {
+  display: none;
+}
+
+.swiper-slide .icon-cover {
+  display: flex;
+}
+
+.swiper-slide .icon-border {
+  gap: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--c100-ds);
+}
+
+.icon-text {
+  min-height: 250px;
+  max-width: 450px;
+}
+
+.swiper-slide .text-cover {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  gap: 20px;
 }
-
-.icon-text img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px; /* Added margin-bottom for spacing */
-  fill: var(--pri-dac); /* Set the default color */
-}
-
-.icon-text:hover {
-  background-color: var(--sce-ds);
-  color: var(--c50-ds);
-}
-.icon-text span {
-  padding: 20px;
-}
-.icon-text:hover span {
-  color: var(--c50-ds);
-}
-
-.icon-text:hover img {
-  filter: brightness(0) invert(1); /* Change to white color on hover */
-}
-
-.icon-text-active {
-  background-color: var(--sce-ds);
-  color: var(--c50-ds);
-}
-.icon-text-active span {
-  color: var(--c50-ds) !important;
-}
-
-.icon-text p {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17.71px;
-  margin: 0; /* Remove default margin */
-}
-
-.icon-text span {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17.71px;
-  padding-top: 15px; /* Remove default margin */
-  color: var(--text-ds);
-  text-align: center;
-}
-
-@media (max-width: 767.98px) {
-  .icon-text {
-    padding: 20px 10px;
-    margin: 0px 5px;
+@media (max-width: 390px), (max-width: 768px), (max-width: 600px) {
+  #operational-area {
+    padding: 0px;
+  }
+  .swiper-container {
+    display: none !important;
+  }
+  .header-text {
+    padding: 0 25px;
+    text-align: center;
+  }
+  .header-text h2 {
+    font-size: 18px;
+    line-height: 22.77px;
+  }
+  .header-text h5 {
+    font-size: 15px;
+    line-height: 15.18px;
+  }
+  .swiper-container-mobile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 10px; /* Adjust gap between items */
+    padding: 0 25px;
   }
 
-  .header-text .text-1 {
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25.3px;
-    color: var(--pri-ds);
-    margin-bottom: 10px; /* Added margin-bottom */
+  .swiper-wrapper {
+    display: contents !important; /* Disable Swiper flex behavior */
   }
 
-  .header-text .text-2 {
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25.3px;
-    color: var(--sce-ds);
-    margin-bottom: 10px; /* Added margin-bottom */
+  .swiper-slide {
+    flex: 1 1 45%; /* Adjust width for mobile */
+    width: 100%; /* Ensure it doesn't exceed 100% width in mobile */
   }
-
-  .header-text .text-3 {
-    font-family: "Be Vietnam Pro", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17.71px;
-    color: var(--text-ds);
-    margin-bottom: 10px; /* Added margin-bottom */
-    max-width: 100%;
+  .swiper-slide .icon-border {
+    padding: 12px;
   }
 }
