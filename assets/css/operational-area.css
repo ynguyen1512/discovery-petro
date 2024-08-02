@@ -1,5 +1,11 @@
 #operational-area {
+  margin-top: 40px;
   padding: 70px;
+}
+#operational-area .swiper-cover { 
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .header-text {
@@ -42,6 +48,8 @@
 
 .swiper-container {
   width: 100%;
+  max-width: 1330px;
+  overflow: hidden;
 }
 
 .swiper-slide {
@@ -49,9 +57,11 @@
   flex-direction: column !important;
   padding: 25px 25px;
   border-radius: 10px;
-  transition: background-color 0.3s, color 0.3s;
+  transition: all .2s;
   cursor: pointer;
   gap: 40px;
+  margin-right: 30px !important;
+  margin-left: 30px !important;
   background-color: var(--c50-ds);
   clip-path: polygon(50% 0%, 100% 0, 100% 80%, 90% 100%, 0 100%, 0 0);
 }
@@ -65,6 +75,7 @@
   background-color: var(--sce-ds);
   color: var(--c50-ds);
   box-shadow: 0px 2px 10px 0px #38383840;
+  transition: all .2s;
 }
 
 .swiper-slide:hover p {
@@ -107,38 +118,42 @@
   .swiper-container {
     display: none !important;
   }
-  .header-text {
+  #operational-area .header-text {
     padding: 0 25px;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
   }
-  .header-text h2 {
+  #operational-area .swiper-container-mobile .swiper-slide {
+    max-height: 230px;
+  }
+  #operational-area .header-text h2 {
     font-size: 18px;
     line-height: 22.77px;
   }
-  .header-text h5 {
+  #operational-area .header-text h5 {
     font-size: 15px;
     line-height: 15.18px;
   }
-  .header-text .text-1 {
+  #operational-area .header-text .text-1 {
     font-size: 20px;
     font-weight: 700;
   }
-  .header-text .text-2 {
+  #operational-area .header-text .text-2 {
     font-size: 20px;
     font-weight: 700;
   }
-  .swiper-container-mobile {
+  #operational-area .swiper-container-mobile {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     place-items: center;
-    gap: 10px; /* Adjust gap between items */
+    gap: 20px; /* Adjust gap between items */
     padding: 0 25px;
   }
 
   .swiper-slide.icon-text .desc-operation {
     font-size: 12px !important;
     font-weight: 300 !important;
+    line-height: 20.18px !important;
   }
 
   .swiper-wrapper {
