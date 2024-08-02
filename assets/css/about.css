@@ -69,7 +69,6 @@ body {
 }
 
 .btn-custom {
-  /* background-color: #FF6C37; */
   border: none;
   color: #FFFFFF;
 }
@@ -125,7 +124,7 @@ body {
 .tabpane-container p {
   width: 462px;
 }
-
+/* 
 .button-container a {
   position: absolute;
   font-size: 14px;
@@ -133,15 +132,43 @@ body {
   text-transform: capitalize;
 }
 
-.btn-custom:hover {
-  background-color: #FF6C37;
-  opacity: 0.8;
+.btn.btn-custom:hover {
+  background-color: var(--pri-ds) !important;
+  color: #fff;
+} */
+.button-container {
+  display: flex;
+  align-items: center;
+  color: #fff;
 }
 
-/* .nav-tabs .nav-link.active {
-  border-color: #FF6C37 #FF6C37 #002B4E;
-  color: #FF6C37;
-} */
+.btn-custom {
+  background-color: var(--sce-ds); 
+  color: #fff !important;
+  padding: 9px 45px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: var(--pri-ds); 
+  color: #fff;
+}
+
+.btn-custom a{
+  text-transform: capitalize;
+  color: #fff;
+  z-index: 4;
+  margin-left: -20px;
+}
+.arrow-right {
+  display: inline-block;
+  margin-left: 10px;
+  color: #fff;
+  transition: filter 0.3s ease;
+}
+
 .nav-tabs .nav-link.active {
   background-color: transparent !important;
   color: var(--white-color) !important;
@@ -186,6 +213,10 @@ body {
   .about {
     flex-direction: column;
     max-width: 100%;
+  }
+
+  .btn-custom:hover {
+    background-color: transparent;
   }
 
   .about-wrapper {
