@@ -417,9 +417,9 @@ body {
   }
 
   .content-right h4 {
-    margin-top: 34px;
+    /* margin-top: 34px; */
     font-size: 16px !important;
-    margin-bottom: 18px;
+    margin-bottom: 34px !important;
   }
 
   .content-right p {
