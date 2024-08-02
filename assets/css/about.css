@@ -45,7 +45,16 @@ body {
   padding: 100px 0;
   background-color: var(--sce-ds);
   min-height: 200px;
-  clip-path: polygon(9% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 0 100%, 0% 80%, 0 13%);
+  clip-path: polygon(
+    9% 0,
+    80% 0%,
+    100% 0,
+    100% 100%,
+    80% 100%,
+    0 100%,
+    0% 80%,
+    0 13%
+  );
 }
 
 .heading span {
@@ -53,12 +62,12 @@ body {
 }
 
 .about {
-  background-color: #002B4E;
+  background-color: #002b4e;
   border: none;
 }
 
 .about-title {
-  color: #FF6C37;
+  color: #ff6c37;
 }
 
 .about-body p {
@@ -70,7 +79,7 @@ body {
 
 .btn-custom {
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .nav.nav-tabs {
@@ -97,16 +106,16 @@ body {
 }
 
 .button-container {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 77px;
 }
 
-.button-container img {
+/* .button-container img {
   position: absolute;
-}
+} */
 
 .arrow-right {
   left: 22%;
@@ -143,28 +152,59 @@ body {
 }
 
 .btn-custom {
-  background-color: var(--sce-ds); 
+  background-color: var(--sce-ds);
   color: #fff !important;
-  padding: 9px 45px;
+  padding: 10px 15px 10px 15px;
   text-decoration: none;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 38px;
+  gap: 20px;
 }
-
+.button-container .btn-custom::after {
+  content: "";
+  background: var(--pri-ds);
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 100%;
+  clip-path: polygon(0% 100%, 0 0%, 100% 0);
+  transition: all .5s;
+}
+.button-container .btn-custom::before {
+  content: "";
+  background: var(--pri-ds);
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s;
+}
+.btn-custom:hover::before {
+  opacity: 1;
+  transition: all .5s;
+  width: 100%;
+}
+.btn-custom:hover::after {
+  transition: all .5s;
+  width: 100%;
+}
 .btn-custom:hover {
-  background-color: var(--pri-ds); 
-  color: #fff;
+  color: white
 }
 
-.btn-custom a{
+.btn-custom a {
   text-transform: capitalize;
   color: #fff;
   z-index: 4;
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 .arrow-right {
+  z-index: 2;
   display: inline-block;
-  margin-left: 10px;
   color: #fff;
   transition: filter 0.3s ease;
 }
@@ -182,7 +222,7 @@ body {
 }
 
 .nav-tabs .nav-link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .img-container .img-fluid {
@@ -197,7 +237,6 @@ body {
   align-items: center;
   gap: 10px;
 }
-
 
 .svg-arrow {
   width: 11px !important;
@@ -214,14 +253,26 @@ body {
     flex-direction: column;
     max-width: 100%;
   }
-
+  .btn-custom {
+    padding: 5px 15px 5px 15px;
+    height: 25px;
+  }
   .btn-custom:hover {
     background-color: transparent;
   }
 
   .about-wrapper {
     padding: 67px 0px;
-    clip-path: polygon(10% 0, 80% 0%, 100% 0, 100% 100%, 80% 100%, 0 100%, 0% 80%, 0 5%);
+    clip-path: polygon(
+      10% 0,
+      80% 0%,
+      100% 0,
+      100% 100%,
+      80% 100%,
+      0 100%,
+      0% 80%,
+      0 5%
+    );
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -259,7 +310,7 @@ body {
     line-height: 15.18px !important;
     text-align: center;
     padding: 0 10px !important;
-    color: #F2F8FD;
+    color: #f2f8fd;
   }
 
   .text-content {
@@ -279,9 +330,9 @@ body {
 
   .nav.nav-tabs {
     justify-content: center;
-    border-bottom: 2px solid #66717A !important;
+    border-bottom: 2px solid #66717a !important;
   }
-  
+
   .nav-link.active {
     border-bottom: 2px solid var(--pri-ds);
   }
@@ -323,10 +374,9 @@ body {
   .button-container a {
     font-size: 12px;
     font-weight: 600;
-    margin-left: -12px;
   }
 
-  .button-container .vector-70{
+  .button-container .vector-70 {
     left: 30% !important;
   }
 
@@ -345,7 +395,8 @@ body {
     width: 11%;
   }
 
-  .text-container h1,p{
+  .text-container h1,
+  p {
     font-size: 14px !important;
     font-weight: 600 !important;
     margin: 0 !important;
@@ -365,7 +416,7 @@ body {
     display: block !important;
   }
 
-  .content-right h4{
+  .content-right h4 {
     margin-top: 34px;
     font-size: 16px !important;
     margin-bottom: 18px;
