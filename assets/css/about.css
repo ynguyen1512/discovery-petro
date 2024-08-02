@@ -186,7 +186,6 @@ body {
   .about {
     flex-direction: column;
     max-width: 100%;
-    margin-top: 5px;
   }
 
   .about-wrapper {

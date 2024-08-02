@@ -43,6 +43,10 @@
   grid-template-columns: auto auto auto;
   grid-gap: 40px;
 }
+
+.post-title-1 {
+  color: var(--pri-ds);
+}
 /* .blog .grid-item:first-child .post {
     position: relative;
 }
@@ -197,6 +201,9 @@
   display: none;
 }
 @media (max-width: 770px) {
+  .carousel-indicators {
+    top: 100%;
+  }
   .blog .cover {
     padding: 25px;
   }
@@ -211,7 +218,9 @@
   }
 
   .blog .post .description {
-    font-size: 12px;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    margin-bottom: 20px !important;
   }
   .blog .subtitle {
     font-size: 12px;
