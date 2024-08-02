@@ -3,6 +3,7 @@
 
 /* Carousel */
 .carousel-caption {
+  z-index: 3;
   font-family: "Be Vietnam Pro", sans-serif;
   position: absolute;
   top: 55% !important;
@@ -319,13 +320,32 @@
 .che-do-an-uong .carousel-indicators li.active {
   opacity: 1 !important;
 }
+#carouselExampleIndicators .logo {
+  display: none;
+}
 
 @media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 32px;
+  #carouselExampleIndicators .carousel-indicators {
+    display: none;
   }
+  #carouselExampleIndicators .logo {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 50px;
+  }
+  #carouselExampleIndicators .logo  img {
+    width: 60px;
+    height: 60px;
+}
   .carousel-caption {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 40.36px;
+    max-width: 331px;
+    max-height: 110px;
   }
 
   .carousel-item img {
