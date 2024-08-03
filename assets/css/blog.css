@@ -35,6 +35,7 @@
   color: var(--sce-ds);
 }
 .blog .cover {
+  padding: 70px;
   max-width: 1440px;
 }
 .blog .recent-posts {
@@ -208,7 +209,6 @@
   }
   .blog {
     margin-top: 0 !important;
-    margin-bottom: 50px;
   }
   .blog .cover {
     padding: 25px;
