@@ -78,7 +78,8 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 2rem;
+  font-weight: 100;
+  font-size: 4.5rem;
   cursor: pointer;
 }
 /* Separate media queries for each breakpoint */

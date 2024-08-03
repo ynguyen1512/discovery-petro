@@ -2,14 +2,17 @@
   background-color: var(--sce-ds);
   padding: 40px 20px 40px 20px;
   display: flex;
-  color: var(--white-color);
+  color: #F2F8FD;
 }
 .footer h5 {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 16px;
 }
 .footer a {
   color: var(--pri-ds);
   text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -23,8 +26,8 @@
   font-weight: bold;
 }
 .footer .logo img {
-  width: 150px;
-  height: 120px;
+  width: 100px;
+  height: 93px;
   gap: 0px;
   opacity: 0px;
 }
