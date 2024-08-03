@@ -112,6 +112,9 @@
   flex-direction: column;
   gap: 20px;
 }
+.swiper-wrapper {
+  margin-left: 100px;
+}
 @media (max-width: 390px), (max-width: 768px), (max-width: 600px) {
   #operational-area {
     padding: 0px;
