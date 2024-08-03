@@ -66,9 +66,9 @@
 }
 .be-vietnam-pro-light {
   font-family: "Be Vietnam Pro", sans-serif;
-  font-weight: 300;
+  font-weight: 300 !important;
   font-style: normal;
-  font-size: 14px;
+  font-size: 12px !important;
 }
 html {
   font-size: 62.5%;

@@ -204,8 +204,10 @@
 @media (max-width: 770px) {
   .carousel-indicators {
     top: 100%;
+    display: flex !important;
   }
   .blog {
+    margin-top: 0 !important;
     margin-bottom: 50px;
   }
   .blog .cover {

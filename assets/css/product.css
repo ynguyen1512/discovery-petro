@@ -174,6 +174,8 @@
 @media (max-width: 390px), (max-width: 768px), (max-width: 600px) {
   #products {
     padding: 0px 25px;
+    margin-top: -86px;
+    margin-bottom: 46px;
   }
   #products .pc-cover {
     display: none;
@@ -196,6 +198,7 @@
     border-radius: 12px;
     gap: 30px;
     display: flex;
+    margin-top: -10px;
     flex-direction: column;
   }
   #products .cover .product-blog-2 .img-cover img {
@@ -213,6 +216,9 @@
   #products .cover .product-blog .img-cover img {
     width: 100%;
     height: 100%;
+  }
+  #products .header-text {
+    margin-bottom: 10px;
   }
 
   #products .content-2 {

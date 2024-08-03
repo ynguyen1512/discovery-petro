@@ -96,3 +96,9 @@
     margin-top: 55px;
     font-size: 14px;
 }
+
+@media (max-width: 390px), (max-width: 768px), (max-width: 600px) { 
+    .our-project {
+        margin-top: 65px !important;
+    }
+}

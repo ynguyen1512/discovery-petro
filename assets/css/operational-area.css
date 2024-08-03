@@ -135,11 +135,11 @@
     font-size: 15px;
     line-height: 15.18px;
   }
-  #operational-area .header-text .text-1 {
-    font-size: 20px;
+  .header-text .text-1 {
+    font-size: 20px !important;
     font-weight: 700;
   }
-  #operational-area .header-text .text-2 {
+  .header-text .text-2 {
     font-size: 20px;
     font-weight: 700;
   }
