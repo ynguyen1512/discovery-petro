@@ -223,6 +223,10 @@ body {
   z-index: 4;
   /* margin-left: -20px; */
 }
+.btn-custom a:hover {
+  color: white;
+  text-decoration: none;
+}
 .arrow-right {
   z-index: 2;
   display: inline-block;
@@ -440,7 +444,7 @@ body {
   }
 
   .recent-project {
-    padding: 34px !important;
+    padding: 25px !important;
   }
 
   .recent-project .content-project img {

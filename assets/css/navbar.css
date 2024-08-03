@@ -9,11 +9,12 @@
   max-width: 1440px;
 }
 
+
 .custom-navbar {
   background-color: white;
   width: 100%; /* Changed to 100% to be responsive */
   height: 103px;
-  padding: 30px 0;
+  padding: 0px 70px !important;
   position: relative; /* Initial position */
   margin: 0 auto; /* Center the navbar */
   z-index: 1050;
@@ -109,7 +110,7 @@
   .custom-navbar {
     bottom: 0 !important;
     position: fixed !important;
-    padding: 0;
+    padding: 0 !important;
     background-color: var(--sce-ds) !important;
     height: 50px !important;
   }
