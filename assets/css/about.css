@@ -300,6 +300,9 @@ body {
 }
 
 @media (max-width: 770px) {
+  .about .col-md-10 {
+    padding: 0;
+  }
   .about .about-title .pc {
     display: none;
   }
@@ -319,7 +322,7 @@ body {
 
   .about {
     flex-direction: column;
-    max-width: 100%;
+    max-width: 342px;
     height: 1110px !important;
   }
 
